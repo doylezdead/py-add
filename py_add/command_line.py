@@ -49,7 +49,7 @@ class CLI(object):
 
 
         while self.running:
-            new_out = self.stack.print_tape(buffer=2, width=self.width - 2, border=True)
+            new_out = self.stack.print_tape(buffer=2, width=self.width - 4, border=True)
             num_lines = len(new_out.split('\n'))
             sys.stdout.write(UP*(num_lines+2) + new_out + '\n')
             sys.stdout.write('  ' + '=' * (self.width - 4) + '\n\n  ' + '=' * (self.width - 4) + '{}\r'.format(UP))
