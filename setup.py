@@ -18,18 +18,18 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='py_add',
+    name='py-add',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
     version='0.0.1',
 
-    description='full-featured pure python command-line adding machine',
+    description='pure python command-line adding machine',
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/doylezdead/py_add',
+    url='https://github.com/doylezdead/py-add',
 
     # Author details
     author='Ryan Doyle',
@@ -94,7 +94,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         'console_scripts': [
-            'py-add=py_add.command_line:entry_point',
+            'py-add=py-add.command_line:entry_point',
         ],
     },
 )

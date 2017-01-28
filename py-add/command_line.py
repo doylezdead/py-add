@@ -1,5 +1,5 @@
 import colors
-import py_add.lib as addlib
+import py-add.lib as addlib
 import sys
 import time
 
